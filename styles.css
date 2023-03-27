@@ -1,0 +1,148 @@
+*{
+    background-color: #131415;
+    color: #fff;
+    line-height: 1.5em;
+    box-sizing: border-box;
+    font-family: 'Readex Pro', sans-serif;
+}
+
+#profile-pic{
+    border-radius: 50%;
+    height:120px;
+    width: 150px;
+    object-fit: cover;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    gap:4em;
+}
+p,span,li{
+    color:#adb0b1;
+    font-size: 1em;
+}
+#skills-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    font-size: 0.9em;
+}
+
+.card-techstack{
+    border: 1px solid #2b3031;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    align-items: center;
+}
+
+#hero-title{
+    font-size: 44px;
+    line-height: 1em;
+}
+.summary-list li{
+	font-size: 16px;
+	margin-bottom: 1em;
+	list-style-type: none;
+	padding: 0.5em 0 0 3em;
+	position: relative;
+}
+.summary-list li::before{
+        content: " ";
+		display: block;
+		border: solid .8em green;
+		border-radius: .8em;
+		height: 0;
+		width: 0;
+		position: absolute;
+		left: .5em;
+		top: 40%;
+		margin-top: -.5em;
+}
+.summary-list li::after{
+    content: " ";
+    display: block;
+    width: .3em;
+    height: .6em;
+    border: solid #fff;
+    border-width: 0 .2em .2em 0;
+    position: absolute;
+    left: 1em;
+    top: 40%;
+    margin-top: -.2em;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#hero-description{
+    color:#adb0b1;
+    font-weight: 300;
+}
+a{
+    text-decoration: none;
+    font-weight: 500;
+    color:rgb(30, 190,214);
+}
+.section-details{
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+#social-links{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 4em;
+    flex-wrap: wrap;
+}
+#social-links a{
+    font-weight: 300;
+    color:#adb0b1;
+    font-size:0.9em;
+    transition: 0.3s;
+}
+#social-links a:hover{
+    font-weight: 100;
+    color:rgb(30, 190,214);
+    font-size:0.9em;
+}
+.line-break{
+    height: 1px;
+    background-color: #2b3031;
+}
+.work-history{
+    border-left: 1px solid #2b3031;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    padding-left: 2em;
+}
+body{
+    margin: 0 auto;
+    max-width: 700px;
+    padding:1.5em;
+}
+
+/* Making page responsive*/
+@media(max-width:600px){
+
+    #hero{
+        display: flex;
+        align-items: center;
+        gap:1em;
+        flex-direction: column;
+    }
+
+    #profile-pic{
+        height:200px;
+        width: 200px;
+    }
+    .section-details{
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    .work-history{
+        border-left:none;
+        padding-left:0;
+    }
+
+}
